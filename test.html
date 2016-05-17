@@ -1,0 +1,26 @@
+<!doctype html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css"/>
+</head>
+<body>
+    <h1>Our software makes <span id="swappable-title"><span>developpers</span></span> happy</h1>
+</body>
+<script   src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
+<!--
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
+<script   src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
+	-->
+<script src="dist/slogan-roulette.min.js"></script>
+<script>
+// all options
+$('#swappable-title').sloganRoulette({
+    autoplay: true,
+    repeat: true,
+    startDelay: 700,
+    interval: 1000,
+    outClass: "bounceOut",
+    inClass: "bounceIn",
+    slogans: ["designers", "doctors", "architects", "space monkeys"]
+});
+</script>
