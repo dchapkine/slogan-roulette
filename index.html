@@ -51,10 +51,10 @@
 			&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css"/>
 		&lt;/head>
 		&lt;body>
-			&lt;h1>Animation test  &lt;span id="swappable-title">&lt;span>&lt;/span>&lt;/span>&lt;/h1>
+			&lt;h1>Our software makes &lt;span id="swappable-title">&lt;span>developpers&lt;/span>&lt;/span> happy&lt;/h1>
 		&lt;/body>
-		&lt;script src="/packages/slogan-roulette/slogan-roulette.js">&lt;/script>
-		&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js">&lt;/script>
+		&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js">&lt;/script>
+		&lt;script src="dist/slogan-roulette.min.js">&lt;/script>
 		&lt;script>
 		// all options
 		$('#swappable-title').sloganRoulette({
@@ -62,9 +62,9 @@
 			repeat: true,
 			startDelay: 700,
 			interval: 1000,
-			outClass: "fadeOutDown",
-			inClass: "fadeInDown",
-			slogans: ["one", "two", "three"]
+			outClass: "bounceOut",
+			inClass: "bounceIn",
+			slogans: ["designers", "doctors", "architects", "space monkeys"]
 		});
 		&lt;/script>
 
