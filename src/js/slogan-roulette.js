@@ -84,4 +84,5 @@
 		return this;
 	};
 
-}( Zepto||jQuery ));
+}( (window['Zepto']!=undefined)?Zepto:jQuery ));
+
