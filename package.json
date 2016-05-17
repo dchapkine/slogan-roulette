@@ -1,0 +1,25 @@
+{
+  "name": "slogan-roulette",
+  "version": "0.0.1",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dchapkine/slogan-roulette.git"
+  },
+  "author": "dmitri chapkine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dchapkine/slogan-roulette/issues"
+  },
+  "homepage": "https://github.com/dchapkine/slogan-roulette#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3"
+  }
+}
