@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/github.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css"/>
+	<style>
+
+		body
+		{
+			font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 13px;
+			line-height: 1.42857143;
+			color: #5A5A5A;
+			background-color: #fcfcfc;
+			padding-top: 50px;
+		}
+
+		.hljs
+		{
+			background: none !important;
+		}
+
+		h1
+		{
+			width: 280px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		h1.quickstart
+		{
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+
+
+	<h1 class="quickstart"><span class="quickstart-replacable"><span>Quick start</span></span></h1>
+
+
+	<pre><code class="html">
+
+		&lt;!doctype html>
+		&lt;head>
+			&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css"/>
+		&lt;/head>
+		&lt;body>
+			&lt;h1>Animation test  &lt;span id="swappable-title">&lt;span>&lt;/span>&lt;/span>&lt;/h1>
+		&lt;/body>
+		&lt;script src="/packages/slogan-roulette/slogan-roulette.js">&lt;/script>
+		&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js">&lt;/script>
+		&lt;script>
+		// all options
+		$('#swappable-title').sloganRoulette({
+			autoplay: true,
+			repeat: true,
+			startDelay: 700,
+			interval: 1000,
+			outClass: "fadeOutDown",
+			inClass: "fadeInDown",
+			slogans: ["one", "two", "three"]
+		});
+		&lt;/script>
+
+	</code></pre>
+
+
+
+
+	<h1>Animation test  <span id="swappable-title1"><span></span></span></h1>
+	<pre><code class="js">
+
+		// fade in from top / fade out to bottom
+		$('#swappable-title').sloganRoulette({
+			outClass:"fadeOutDown",
+			inClass:"fadeInDown"
+		});
+
+	</code></pre>
+
+	<h1>Animation test  <span id="swappable-title2"><span></span></span></h1>
+	<pre><code class="js">
+
+		// bounce in / fade out to bottom
+		$('#swappable-title').sloganRoulette({
+			outClass:"fadeOutDown",
+			inClass:"bounceIn"
+		});
+
+	</code></pre>
+
+
+
+	<h1>Animation test  <span id="swappable-title3"><span></span></span></h1>
+	<pre><code class="js">
+
+		// bounce in / bounce out
+		$('#swappable-title').sloganRoulette({
+			outClass:"bounceOut",
+			inClass:"bounceIn"
+		});
+
+	</code></pre>
+
+
+
+	<h1>Animation test  <span id="swappable-title4"><span></span></span></h1>
+	<pre><code class="js">
+
+		// flip in / flip out
+		$('#swappable-title').sloganRoulette({
+			outClass:"flipOutX",
+			inClass:"flipInX"
+		});
+
+	</code></pre>
+
+
+
+	<h1>Animation test  <span id="swappable-title5"><span></span></span></h1>
+	<pre><code class="js">
+
+		// fade in up / zoom out up
+		$('#swappable-title').sloganRoulette({
+			outClass:"zoomOutUp",
+			inClass:"fadeInUp"
+		});
+
+	</code></pre>
+
+
+	<h1>Animation test  <span id="swappable-title6"><span></span></span></h1>
+	<pre><code class="js">
+
+		// bounce in / zoom out up
+		$('#swappable-title').sloganRoulette({
+			outClass:"zoomOutUp",
+			inClass:"bounceIn"
+		});
+
+	</code></pre>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
+<script src="dist/slogan-roulette.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>
+
+	$(function() {
+					
+		$('.quickstart-replacable').sloganRoulette({
+			outClass:"bounceOut",
+			inClass:"bounceIn",
+			slogans: ["slogan roulette", "custom animations", "custom timings", "tiny size", "zepto.js compatible", "jquery compatible", "what else ?"]
+
+		});
+
+
+
+
+		// fade in from top / fade out to bottom
+		$('#swappable-title1').sloganRoulette({
+			outClass:"fadeOutDown",
+			inClass:"fadeInDown"
+		});
+
+		// bounce in / fade out to bottom
+		$('#swappable-title2').sloganRoulette({
+			outClass:"fadeOutDown",
+			inClass:"bounceIn"
+		});
+
+		// bounce in / bounce out
+		$('#swappable-title3').sloganRoulette({
+			outClass:"bounceOut",
+			inClass:"bounceIn"
+		});
+
+
+		// flip in / flip out
+		$('#swappable-title4').sloganRoulette({
+			outClass:"flipOutX",
+			inClass:"flipInX"
+		});
+
+		// fade in up / zoom out up
+		$('#swappable-title5').sloganRoulette({
+			outClass:"zoomOutUp",
+			inClass:"fadeInUp"
+		});
+
+		// bounce in / zoom out up
+		$('#swappable-title6').sloganRoulette({
+			outClass:"zoomOutUp",
+			inClass:"bounceIn"
+		});
+
+	});
+
+</script>
+</html>
