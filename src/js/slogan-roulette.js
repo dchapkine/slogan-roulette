@@ -34,7 +34,7 @@
 		if (!theend || repeat == true)
 		{
 			animate(el, outClass, function() {
-				el.find("span").text(claim);
+				el.find("span").html(claim);
 				animate(el, inClass, function() {
 					if (autoplay === true)
 					{
